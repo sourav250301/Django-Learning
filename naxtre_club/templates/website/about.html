@@ -1,17 +1,11 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang = 'en'>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width,initial-scale=1.0">
-        <title>
-            About Section
-        </title>
-        <link rel="stylesheet" href="{% static 'star.css' %}">
-    </head>
-    <body>
-        <h1>
-            This is about section!!
-        </h1>
-    </body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}
+about
+{% endblock %}
+
+{% block content %}
+<h1 class='bg-rose-500 text-4xl'>
+    This is about section!!
+</h1>
+{% endblock %}
