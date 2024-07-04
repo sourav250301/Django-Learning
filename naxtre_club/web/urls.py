@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('',views.webin,name='webin'),
-    path('<int:domain_id>/',views.details,name='details'),
+    path('<int:id>/',views.details,name='details'),
 ]

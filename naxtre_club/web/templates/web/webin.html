@@ -11,7 +11,7 @@
     <div class="bg-cyan-700 p-4 text-justify">
         <img class = "rounded shadow-md items-center" src="{{domain.image.url}}" alt="">
         <h3 class="text-center text-2xl font-bold">{{domain.name}}</h3>
-        <a href="#">
+        <a href="{% url 'details' domain.id%}">
             <button type="button" class="inline-flex items-center w-[100%] justify-center px-4 py-2 border border-transparent text-sm font-medium 
             rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
                 {{domain.type}} - {{domain.id}}

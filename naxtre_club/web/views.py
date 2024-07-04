@@ -7,6 +7,6 @@ def webin(request):
     domains = developer.objects.all()
     return render(request,'web/webin.html', {'domains': domains})
 
-    def details(request,domain_id):
-        domains = get_object_or_404(developer,pk=domain_id)
-        return render(request, 'web/detail.html', {'domains': domains})
+def details(request,domain_id):
+    projects = get_object_or_404(developer,pk=id)
+    return render(request, 'web/detail.html', {'projects': projects})
