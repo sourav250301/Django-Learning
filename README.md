@@ -1,0 +1,1 @@
+Hii, This is the first Django project I have been making. It's still in increment phase, So only see the structure and dont copy it. Day by day when I develop it more it will be more accurate. Thank you!!
