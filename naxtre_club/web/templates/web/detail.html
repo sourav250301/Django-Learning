@@ -5,14 +5,19 @@
 {% endblock %}
 
 {% block content %}
-   <h1>Project details Page</h1>
-<h3>
-    {{domains.type}}
+   <h1 class="bg-slate-400 font-serif text-3xl ">Project details Page</h1>
+<h3 class = 'text-center p-2 m-3 text-wrap text-3xl contain-inline-size bg-black'>
+    {{projects.name}}
 </h3>
-<p>
-{{details}}
+<p class="grid-center text-center bg-red-500 justify-center p-2 m-100% text-2xl">
+{{projects.projects}}
 </p>
-
+<h3>
+{{ratings.rate}}
+</h3>
+<h3>
+  {{ratings.review}}
+</h3>
 
 
 {% endblock %}

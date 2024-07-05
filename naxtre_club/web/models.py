@@ -1,3 +1,4 @@
+from email.policy import default
 from django.db import models
 from django.utils import timezone
 
@@ -19,4 +20,8 @@ class developer(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class rating(models.Model):
+        rate =models.IntegerField()
+        review =models.TextField(default="")
     
