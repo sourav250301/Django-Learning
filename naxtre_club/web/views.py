@@ -12,6 +12,6 @@ def details(request,domain_id):
     return render(request, 'web/detail.html', {'projects': projects})
 
 def ratings(request,user_id):
-    reviews = ratings.object.all()
-    return render(request, 'web/detail.html', {'reviews':reviews})
+    reviews = rating.object.all()
+    return render(request, 'contacts.html', {'reviews':reviews})
     

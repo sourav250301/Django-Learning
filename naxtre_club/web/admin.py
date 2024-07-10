@@ -3,3 +3,4 @@ from .models import developer
 
 # Register your models here.
 admin.site.register(developer)
+admin.site.register(ratings)
