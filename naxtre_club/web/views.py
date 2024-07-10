@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import developer
+from .models import developer,ratings
 from django.shortcuts import get_object_or_404
 
 # Create your views here.
@@ -12,6 +12,6 @@ def details(request,domain_id):
     return render(request, 'web/detail.html', {'projects': projects})
 
 def ratings(request,user_id):
-    reviews = rating.object.all()
+    reviews = ratings.object.all()
     return render(request, 'contacts.html', {'reviews':reviews})
     

@@ -21,7 +21,12 @@ class developer(models.Model):
     def __str__(self):
         return self.name
     
-    class rating(models.Model):
-        rate =models.IntegerField()
+    class ratings(models.Model):
+        Star_Choice= [
+            ('A', 'Top Perfomer'),
+            ('B', 'Team Worker'),
+            ('C', 'Not up to Mark'),
+        ]
+        rate =models.CharField(max_length=1, choices= Star_Choice)
         review =models.TextField(default="")
     
