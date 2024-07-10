@@ -12,13 +12,22 @@ Contacts page
         </div>
         <div>
             <ul class="flex space-x-4">
-                <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-white">About</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-white">Services</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+                <li><a href="{% url 'home' %}" class="text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="{% url 'about' %}" class="text-gray-300 hover:text-white">About</a></li>
+                <li><a href="{% url 'webin' %}" class="text-gray-300 hover:text-white">web</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Contacts</a></li>
             </ul>
         </div>
     </div>
 </nav>
+<body>
+    <div class="bg-orange-950 m-2 p-3 text-center text-fuchsia-100 font-bold text-2xl">
+        Contact details
+    </div>
+    <div>
+        {{domain.name}}
+    </div>
+   
+</body>
 {% endblock %}
 

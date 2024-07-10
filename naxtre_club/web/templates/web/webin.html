@@ -5,8 +5,24 @@
 {% endblock %}
 
 {% block content %}
-   <h1 class="bg-slate-400 text-aligned font-serif text-2xl">web developers</h1>
- <div class="grid grid-cols-4 gap-4 m-4 rounded">
+<nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+    <div class="text-white text-lg font-bold">
+   web developers
+    </div>
+   <div>
+    <a href="{% url 'about'%}"></a>
+        <ul class="flex space-x-4">
+            <li><a href="{% url 'home' %}" class="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="{% url 'about' %}" class="text-gray-300 hover:text-white">About</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">web</a></li>
+            <li><a href="{% url 'contacts' %}" class="text-gray-300 hover:text-white">Contacts</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+ 
+<div class="grid grid-cols-4 gap-4 m-4 rounded">
     {% for domain in domains %}
     <div class="bg-cyan-700 p-4 text-justify">
         <img class = "rounded shadow-md items-center" src="{{domain.image.url}}" alt="">
@@ -18,7 +34,8 @@
             </button>
         </a>
     </div>
-    {% endfor %}
+
+{% endfor %}
 </div>
 {% endblock %}
 

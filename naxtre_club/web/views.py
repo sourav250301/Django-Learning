@@ -14,3 +14,4 @@ def details(request,domain_id):
 def ratings(request,user_id):
     reviews = ratings.object.all()
     return render(request, 'web/detail.html', {'reviews':reviews})
+    
